@@ -1,0 +1,37 @@
+{
+  "name": "cut-head",
+  "version": "1.0.0",
+  "description": "split a string into two part",
+  "main": "lib",
+  "scripts": { 
+    "build": "coffee -c -b -o lib src  ",
+    "clean": "rm -r lib",
+    "prepublish": "npm run-script build",
+    "postpublish": "npm run-script clean",
+    "test": "jasmine-node --coffee  --verbose spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/js-seth-h/cut-head.git"
+  },
+  "keywords": [
+    "web",
+    "connect",
+    "middleware",
+    "flow",
+    "rack",
+    "async",
+    "next"
+  ],
+  "author": "js.seth.h@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/js-seth-h/cut-head/issues"
+  },
+  "homepage": "https://github.com/js-seth-h/cut-head",
+  "dependencies": { 
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1"
+  }
+}
